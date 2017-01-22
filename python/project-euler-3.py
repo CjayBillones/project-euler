@@ -1,5 +1,8 @@
-import math
 from PrimalityTest import isPrime
+import math
+import time
+
+start_time = time.time()
 
 limit = 600851475143
 
@@ -12,3 +15,4 @@ while i < math.sqrt(limit):
     primes.append(i)
 
 print max(primes)
+print("--- %s seconds ---" % (time.time() - start_time))

@@ -1,4 +1,7 @@
 from PrimalityTest import isPrime
+import time
+
+start_time = time.time()
 
 count = i = 0
 
@@ -8,3 +11,4 @@ while count != 10001:
     count = count + 1
 
 print i
+print("--- %s seconds ---" % (time.time() - start_time))
