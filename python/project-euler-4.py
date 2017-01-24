@@ -1,7 +1,5 @@
+from UtilityFunctions import is_palindrome
 import time
-
-def isPalindrome(n):
-  return str(n) == str(n)[::-1]
 
 def solution_one():
   palindromes = []
@@ -9,7 +7,7 @@ def solution_one():
   for i in range(100, 1000, 1):
     for j in range(100, 1000, 1):
       product = i*j
-      if isPalindrome(product):
+      if is_palindrome(product):
         palindromes.append(product)
 
   return max(palindromes)
@@ -21,7 +19,7 @@ def solution_two():
     j = i
     while j < 1000:
       product = i*j
-      if isPalindrome(product) and product > largest_palindrome:
+      if is_palindrome(product) and product > largest_palindrome:
         largest_palindrome = product
       j = j+1
 
@@ -36,7 +34,7 @@ def solution_three():
       product = i*j
       if product <= largest_palindrome:
         break
-      if isPalindrome(product):
+      if is_palindrome(product):
         largest_palindrome = product
       j = j - 1
     i = i - 1

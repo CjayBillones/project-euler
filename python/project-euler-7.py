@@ -1,4 +1,4 @@
-from PrimalityTest import isPrime
+from UtilityFunctions import is_prime
 import time
 
 def solution_one():
@@ -6,7 +6,7 @@ def solution_one():
 
   while count != 10001:
     i = i+1
-    if isPrime(i):
+    if is_prime(i):
       count = count + 1
 
   return i
@@ -16,7 +16,7 @@ def solution_two():
 
   while count != 10001:
     i = i+2
-    if isPrime(i):
+    if is_prime(i):
       count = count + 1
 
   return i

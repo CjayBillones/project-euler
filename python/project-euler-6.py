@@ -1,5 +1,5 @@
-from Summation import summation_of_n_squared
-from Summation import summation_of_n
+from UtilityFunctions import summation_of_n_squared
+from UtilityFunctions import summation_of_n
 import time
 
 if __name__ == "__main__":

@@ -1,4 +1,4 @@
-from PrimalityTest import isPrime
+from UtilityFunctions import is_prime
 import math
 import time
 
@@ -8,14 +8,14 @@ def solution_one(limit):
 
   while i < math.sqrt(limit):
     i = i + 1
-    if isPrime(i) and limit%i == 0:
+    if is_prime(i) and limit%i == 0:
       primes.append(i)
   return max(primes)
 
 def solution_two(limit):
   i = int(math.sqrt(limit))
   while i > 0:
-    if isPrime(i) and limit%i == 0:
+    if is_prime(i) and limit%i == 0:
       break
     i = i - 1
   return i  

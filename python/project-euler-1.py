@@ -1,4 +1,4 @@
-from Summation import summation_of_n
+from UtilityFunctions import summation_of_n
 import time
 
 def divisible(dividend, divisor):

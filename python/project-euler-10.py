@@ -1,4 +1,4 @@
-from PrimalityTest import isPrime
+from UtilityFunctions import is_prime
 import time
 
 if __name__ == "__main__":
@@ -7,7 +7,7 @@ if __name__ == "__main__":
   result = 0
 
   for i in range (2, 2000001, 1):
-    if isPrime(i):
+    if is_prime(i):
       result = result + i
 
   print result
