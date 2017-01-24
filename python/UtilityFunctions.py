@@ -21,6 +21,20 @@ def is_prime(n):
     i = i + 6
   return True
 
+# Returns a list of all prime numbers less than or equal to n
+def sieve_of_erastothenes(n):
+  prime = [True for i in range(n+1)]
+  
+  p = 2
+  while(p*p <= n): 
+      if (prime[p]):
+        for i in range(p * 2, n+1, p):
+            prime[i] = False
+      p+=1
+
+  primes = [p for p in range(2, n) if prime[p]]
+  return primes
+
 # Checks if input is a palindrome
 def isPalindrome(n):
   return str(n) == str(n)[::-1]  
