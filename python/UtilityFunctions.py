@@ -43,3 +43,17 @@ def isPalindrome(n):
 def conv_str_list_to_int(str_list):
   num_list = [int(i) for i in str_list]
   return num_list
+
+# Returns greatest common factor/denominator of a and b
+def gcd(a, b):
+  while b:
+    a, b = b, a%b
+  return a
+
+# Returns the least common multiple of a and b
+def lcm(a, b):
+  return (a*b) / gcd(a,b)
+
+# Returns the least common multiple of input numbers
+def lcm_multiple(args):
+  return reduce(lcm, args)
