@@ -3,7 +3,7 @@ import time
 import math
 
 def solution_one():
-  return sum(conv_str_list_to_int(list(str(math.factorial(100)))))
+  return sum(conv_str_list_to_int(str(math.factorial(100))))
 
 if __name__ == "__main__":
   start_time = time.time()
