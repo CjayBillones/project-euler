@@ -1,7 +1,5 @@
 #include <stdio.h>
-
-int divisible(int, int);
-int summation(int);
+#include "UtilityFunctions.h"
 
 int main(){
 
@@ -21,12 +19,4 @@ int main(){
   // is n*(n+1)/2
   printf("%d\n", 3*summation(333) + 5*summation(199) - 15*summation(66));
   return 0;
-}
-
-int divisible(int dividend, int divisor){
-  return (dividend%divisor == 0) ? 1 : 0;
-}
-
-int summation(int n){
-  return (n * (n+1))/2.0;
 }
