@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "PrimalityTest.h"
+#include "UtilityFunctions.h"
 
 int main(){
   unsigned long long int sum = 0;

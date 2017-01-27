@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "PrimalityTest.h"
+#include "UtilityFunctions.h"
 
 int main(int argc, char const *argv[]){
   int count = 0;
