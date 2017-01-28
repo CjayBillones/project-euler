@@ -1,3 +1,7 @@
+# Checks if a number n is divisible by k
+def divisible(n, k):
+  return n%k == 0
+
 # Computes the summation of N consecutive natural numbers
 def summation_of_n(n):
   return n*(n+1)/2

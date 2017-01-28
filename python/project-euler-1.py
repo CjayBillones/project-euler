@@ -1,8 +1,6 @@
 from UtilityFunctions import summation_of_n
+from UtilityFunctions import divisible
 import time
-
-def divisible(dividend, divisor):
-  return dividend%divisor == 0
 
 def solution_one():
   sum_result = 0
