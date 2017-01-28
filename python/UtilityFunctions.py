@@ -57,3 +57,7 @@ def lcm(a, b):
 # Returns the least common multiple of input numbers
 def lcm_multiple(args):
   return reduce(lcm, args)
+
+# Returns the binary representation of a decimal
+def dec_to_bin(n):
+  return "{0:b}".format(n)
