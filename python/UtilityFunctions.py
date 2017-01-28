@@ -61,3 +61,6 @@ def lcm_multiple(args):
 # Returns the binary representation of a decimal
 def dec_to_bin(n):
   return "{0:b}".format(n)
+
+def circular_shift_string(string, n):
+  return string[n:] + string[:n]
